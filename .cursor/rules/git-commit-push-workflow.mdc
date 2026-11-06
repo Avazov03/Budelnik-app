@@ -1,0 +1,23 @@
+---
+description: After project changes, ask before commit/push; confirm with checkmark
+alwaysApply: true
+---
+
+# Git commit / push workflow
+
+Remote: `https://github.com/Avazov03/Budelnik-app.git` (branch `main`).
+
+## After finishing work from a user prompt
+
+If the prompt caused real project changes (code, config, docs, assets):
+
+1. Finish the work first.
+2. Then ask in chat (Uzbek is fine): **commit va git push qilaymi?**
+3. Do **not** commit or push until the user says yes.
+4. When they approve: commit with a clear message, then `git push -u origin main` (or push current tracking branch).
+5. After a successful commit+push, confirm in chat with a checkmark, e.g. **✅ Commit + push qilindi** (include short SHA / message if useful).
+
+## Do not
+
+- Auto-commit or auto-push without asking (except when the user explicitly ordered commit/push in that same message).
+- Commit secrets (`.env`, keys, credentials).

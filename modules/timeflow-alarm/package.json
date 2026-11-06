@@ -1,0 +1,12 @@
+{
+  "name": "timeflow-alarm",
+  "version": "1.0.0",
+  "description": "Android AlarmManager scheduler for TimeFlow",
+  "main": "index.ts",
+  "types": "index.ts",
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  }
+}
